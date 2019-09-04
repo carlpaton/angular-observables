@@ -1,4 +1,4 @@
-<p> parent works!</p>
+<h2>parent</h2>
 
 <p> count: {{count$ | async}}</p>
 <p> countSubject: {{counterSubject.getValue()}}</p>
@@ -10,5 +10,5 @@
 <app-child
   [foo]="foo"
   [countObservable]="count$"
-  [counterSubject]="counterSubject"
-></app-child>
+  [counterSubject]="counterSubject">
+</app-child>

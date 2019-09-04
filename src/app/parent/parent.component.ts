@@ -10,8 +10,8 @@ import { startWith } from 'rxjs/operators';
 export class ParentComponent implements OnInit {
 
   private counterSubject = new BehaviorSubject<number>(0)
-  public count$: Observable<number>
-  foo = 'this is the text value of foo'
+  private count$: Observable<number>
+  private foo = 'this is the text value of foo'
   constructor() { }
 
   ngOnInit() {
