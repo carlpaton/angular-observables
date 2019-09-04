@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Observable, Subject, BehaviorSubject } from 'rxjs'
 import { startWith } from 'rxjs/operators';
 
-
 @Component({
   selector: 'app-parent',
   templateUrl: './parent.component.html',
