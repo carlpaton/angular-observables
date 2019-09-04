@@ -1,6 +1,6 @@
 <h2>parent</h2>
 
-<p> count: {{count$ | async}}</p>
+<p> countObservable: {{countObservable$ | async}}</p>
 <p> countSubject: {{counterSubject.getValue()}}</p>
 
 <button (click)="inc()">+</button>
@@ -9,6 +9,6 @@
 
 <app-child
   [foo]="foo"
-  [countObservable]="count$"
+  [countObservable]="countObservable$"
   [counterSubject]="counterSubject">
 </app-child>
