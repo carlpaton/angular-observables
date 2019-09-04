@@ -1,0 +1,14 @@
+<p> parent works!</p>
+
+<p> count: {{count$ | async}}</p>
+<p> countSubject: {{counterSubject.getValue()}}</p>
+
+<button (click)="inc()">+</button>
+
+<hr>
+
+<app-child
+  [foo]="foo"
+  [countObservable]="count$"
+  [counterSubject]="counterSubject"
+></app-child>
